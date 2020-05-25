@@ -70,10 +70,13 @@
     },
     methods: {
       onScroll(pos) {
-        const tabBarWidth = this.$refs.tabBar.$el.clientWidth
-        const slideWidth = this.$refs.slide.slide.scrollerWidth
-        const transform = -pos.x / slideWidth * tabBarWidth
-        this.$refs.tabBar.setSliderTransform(transform)
+        // const tabBarWidth = this.$refs.tabBar.$el.clientWidth
+        // const slideWidth = this.$refs.slide.slide.scrollerWidth
+        // const transform = -pos.x / slideWidth * tabBarWidth
+        // console.log('tabBarWidth = ', tabBarWidth)
+        // console.log('slideWidth = ', slideWidth)
+        // console.log('transform = ', transform)
+        // this.$refs.tabBar.setSliderTransform(transform)
       },
       onChange(current) {
         this.index = current
